@@ -3,12 +3,6 @@ package teste.felps.br.heranca;
 public class Motocicleta extends Veiculo {
     public int cilindradas;
 
-    @Override
-    public void exibir(){
-        super.exibir();
-        System.out.println("Cilindradas: " + this.cilindradas);
-    }
-
     public void empinar(){
         if (this.ligado == true){
             System.out.println("Empinando a motocicleta.");
