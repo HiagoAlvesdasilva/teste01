@@ -1,5 +1,7 @@
 package teste.felps.br;
 
+import teste.felps.br.abstracao_encapsulamento.Carro;
+
 public class Main {
 
     public static void main(String[] args) {

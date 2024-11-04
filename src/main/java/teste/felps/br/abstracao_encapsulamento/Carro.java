@@ -1,4 +1,4 @@
-package teste.felps.br;
+package teste.felps.br.abstracao_encapsulamento;
 
 public class Carro {
     private String marca;
