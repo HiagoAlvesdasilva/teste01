@@ -1,4 +1,4 @@
-package teste.felps.br.veiculo;
+package teste.felps.br.heranca;
 
 public class Veiculo {
     public String marca;

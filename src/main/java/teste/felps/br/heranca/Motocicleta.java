@@ -1,4 +1,4 @@
-package teste.felps.br.veiculo;
+package teste.felps.br.heranca;
 
 public class Motocicleta extends Veiculo {
     public int cilindradas;
