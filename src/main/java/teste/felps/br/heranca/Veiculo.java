@@ -50,5 +50,7 @@ public class Veiculo {
     public void setAno(int ano) {
         this.ano = ano;
     }
-    
+
+    public boolean isLigado() { return ligado; }
+
 }
