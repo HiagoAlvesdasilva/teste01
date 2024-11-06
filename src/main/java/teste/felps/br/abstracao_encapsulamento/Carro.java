@@ -34,6 +34,7 @@ public class Carro {
     }
 
     public void setAno(int ano) {
-        this.ano = ano;
-    }
+        if (ano < 0) {
+            throw new IllegalArgumentException("Ano inválido."); }
+        this.ano = ano; }
 }
