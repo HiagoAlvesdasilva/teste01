@@ -5,11 +5,11 @@ public class Carro {
     private String modelo;
     private int ano;
 
-    void ligar() {
+    public void ligar() {
         System.out.println("O carro está ligado.");
     }
 
-    void desligar() {
+    public void desligar() {
         System.out.println("O carro está desligado.");
     }
 
