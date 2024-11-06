@@ -8,7 +8,6 @@ public class Motocicleta extends Veiculo {
         this.setModelo(builder.modelo);
         this.setAno(builder.ano);
         this.cilindradas = builder.cilindradas;
-
     }
 
     public void empinar() {
