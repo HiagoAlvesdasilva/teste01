@@ -1,10 +1,10 @@
 package teste.felps.br.heranca;
 
 public class Veiculo {
-    public String marca;
-    public String modelo;
-    public int ano;
-    public boolean ligado = false;
+    private String marca;
+    private String modelo;
+    private int ano;
+    private boolean ligado = false;
 
     public void exibir(){
         System.out.println("Marca: " + this.marca);
@@ -14,15 +14,15 @@ public class Veiculo {
     }
 
     public void ligar(){
-        if(this.ligado == false){
-            this.setLidado(true);
+        if(!this.ligado){
+            this.ligado = true;
             System.out.println("O veículo está ligado.");
         }
     }
 
     public void desligar(){
-        if (this.ligado == true){
-            this.setLidado(false);
+        if (this.ligado){
+            this.ligado = false;
             System.out.println("O veículo está desligado.");
         }
     }
@@ -50,13 +50,5 @@ public class Veiculo {
     public void setAno(int ano) {
         this.ano = ano;
     }
-
-    public boolean isLidado() {
-        return ligado;
-    }
-
-    public void setLidado(boolean lidado) {
-        this.ligado = lidado;
-    }
-
+    
 }
