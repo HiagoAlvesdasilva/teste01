@@ -3,11 +3,7 @@ package teste.felps.br.heranca;
 public class Motocicleta extends Veiculo {
     private int cilindradas;
 
-    private Motocicleta (Builder builder) {
-        this.setMarca(builder.marca);
-        this.setModelo(builder.modelo);
-        this.setAno(builder.ano);
-        this.cilindradas = builder.cilindradas;
+    protected Motocicleta () {
     }
 
     public void empinar() {
@@ -18,36 +14,11 @@ public class Motocicleta extends Veiculo {
         }
     }
 
-    public static class Builder {
-        private String marca;
-        private String modelo;
-        private int ano;
-        private int cilindradas;
-
-        public Builder marca(String marca) {
-            this.marca = marca;
-            return this;
-        }
-
-        public Builder modelo(String modelo) {
-            this.modelo = modelo;
-            return this;
-        }
-
-        public Builder ano(int ano) {
-            this.ano = ano;
-            return this;
-        }
-
-        public Builder cilindradas(int cilindradas) {
-            this.cilindradas = cilindradas;
-            return this;
-        }
-
-        public Motocicleta build() {
-            return new Motocicleta(this);
-        }
+    public int getCilindradas() {
+        return cilindradas;
     }
 
-
+    protected void setCilindradas(int cilindradas) {
+        this.cilindradas = cilindradas;
+    }
 }
